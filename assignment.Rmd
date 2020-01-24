@@ -1,0 +1,23 @@
+---
+title: "Leaflet assignment"
+author: "Mohit Singh"
+date: "January 24, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, include=FALSE}
+library(leaflet)
+
+```
+
+```{r, echo=FALSE} 
+  my_map <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lat = 28.6139, lng = 77.2090, popup = "India's capital")
+  my_map
+```
